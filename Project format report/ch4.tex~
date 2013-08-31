@@ -1,0 +1,125 @@
+\chapter{Testing}
+\begin{table}[h]
+\begin{tabular}{|c|p{5cm}|p{5cm}|p{3cm}|}
+  \hline
+  Sr. No. & Development & Expected Result & Obtained Expected Results (True/False)\\
+  \hline
+  1 & Build A basic build. & It shoud boot and work properly. & True\\
+  \hline
+  2 & Advance build with all essential apps included & It should boot and load properly. & True\\
+  \hline
+  3 & DMLinux final build with custom GUI & It should render properly. & True\\
+  \hline
+  4	& OpenGujarat build with translated component & It should show proper translation with proper running. & True\\
+  \hline
+  5 & MDConverter Application  & It should convert documents as per given specification & True\\
+  \hline
+  6 & Auto ON Utility Application & It should boot PC as per given time. & True\\
+  \hline
+  7 & Gujarati Dicitonary & It should display proper meaning. & True\\
+  \hline
+  \end{tabular}
+  \end{table}
+  \newpage
+  \begin{table}[h]
+  \begin{tabular}{|c|p{5cm}|p{5cm}|p{3cm}|}
+  \hline
+  Sr. No. & Development & Expected Result & Obtained Expected Results (True/False)\\
+  \hline
+  8 & Debian packages for translations and Gujarati dictionary & It can be installed on other systems & True\\
+  \hline
+  9 & LAMP front end  & It must do task properly as per given instructions & True\\
+  \hline
+\end{tabular}
+\caption[Test cases]{Test Cases}
+\end{table}
+
+\chapter{Future Enhancement}
+DMLinux and OpenGujarat both are GNU/Linux Operating systems. Each operating system is build with unique perpose because there is no alternative available.
+For future enhancement, there is lots of chances are available for the next years or for the developers also.
+For future enhancement purpose, We have made a public repository for all our developed applicaions or operating systems.
+\indent Following List of links are public repository for our developments.
+\begin{itemize}
+\item	DMLinux OS (https://github.com/codejar-lab/dmlinux)
+\item	OpenGujarat OS (https://github.com/codejar-lab/opengujarat)
+\item	Gujarati Dictionary (https://github.com/codejar-lab/oguj-dict-pkg)
+\item	Translation Package(https://github.com/codejar-lab/oguj-trans-pkg) 
+\item	Website Source Code(https://github.com/codejar-lab/codejar-lab.github.com)
+\item	Auto ON Utility (https://github.com/arpan-chavda/autoon-util)
+\item	LAMP Front end (https://github.com/arpan-chavda/lamp-fe-linux)
+\item	Multidoc Converter (https://github.com/arpan-chavda/multidocconverter)
+\item	Repocloner (https://github.com/arpan-chavda/repocloner)
+
+\end{itemize}
+
+
+\chapter{Appendix}
+\section{Technology Used}
+\subsection{Ubuntu Minimal}
+\subsubsection{Introduction}
+Ubuntu Minimal is an precompiled version of linux kernel with some basic utilities provided with least minimal system.It is just have size of 27 MB.
+Current version information:
+\begin{itemize}
+\item 12.04.1: Long Term Support
+\item 12.10: Normal Release
+\end{itemize}
+We have taken 12.04.1 version as base of OpenGujarat and 12.10 version for DMLinux.
+\subsubsection{Free and Open Source}
+Ubuntu is well known free and open source gnu/linux operating system. Our both operating systems will be free and open source.
+\subsubsection{Open Development}
+By making public repository of our both operating system, We are inviting other developers to enhance or fork our operating systems.It is an open development for the people, by the people.
+\section{Tools Used}
+
+\subsection{Build essential package}
+Build essential pakage contains following dependencies.
+\begin{itemize}
+\item dpkg-dev (>= 1.13.5)\\
+package building tools for Debian
+\item g++ (>= 4:4.1.1)\\
+The GNU C++ compiler
+\item gcc (>= 4:4.1.1)\\
+The GNU C compiler
+\item libc6-dev \\
+GNU C Library: Development Libraries and Header Files\\
+or libc-dev
+virtual package provided by libc6-dev
+\item make\\
+The GNU version of the "make" utility.
+\end{itemize}
+
+\subsection{chroot environment}
+
+This is the system that will eventually run from the disk. It does not need a kernel, nor a boot-loader unless you are planning on installing it back onto a hard disk (using Ubiquity). The Casper package needs to be installed into the chroot. Casper is what allows the Live System to perform hardware autoconfiguration and run from a live environment. Installing the Casper package will update the kernel’s initrd to perform these tasks. The kernel that is installed into the chroot will be copied out from the chroot and put into the disk image.
+
+
+\subsection{UCK}
+UCK stands for Ubuntu customization toolkit. It is a toolkit to customize any ubuntu based distribution.
+
+\subsubsection{Zenity and YAD framework}
+Zenity is GUI framework which uses Glib for backend to create GUI with shell scripts and YAD is fork of zenity and YAD(YAD stands for Yet Another Dialog)provides more features then Zenity.
+
+\begin{itemize}
+\item Zenity Version : 3.6.0
+\item YAD Version : 0.19.1
+\end{itemize}
+
+
+
+
+\chapter{Summary and Conclusion}
+
+\section{Summary}
+Summary of activities carried out during major project training at BISAG can be listed as below:
+\begin{itemize}
+\item Initial Learning about the technologies and the tools.
+\item Requirement Analysis of the project.
+\item Project Design including GUI related  design.
+\item Project Development (Coding).
+\item Testing  of the project.
+\item Quality Related Work
+\item Final  Documentation.
+\end{itemize}
+
+\section{Conclusion}
+In both distribution various functionalities are implemented.It includes various components that will help users to everday's task in easy wasy. Other utilities development has been developed to enhance user's facilities in the distribution.
+As we have developed many things,there are many chances to upgrade those things in future by other developers.
